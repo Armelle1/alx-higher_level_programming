@@ -1,13 +1,9 @@
 #!/usr/bin/python3
 if __name__ == "__main__":
-    import calculator_1 as c
+    import calculator_1
     a = 10
     b = 5
-    i = c.add(a, b)
-    m = c.sub(a, b)
-    n = c.mul(a, b)
-    o = c.div(a, b)
-    print("{} + {} = {}" .format(a, b, i))
-    print("{} + {} = {}" .format(a, b, m))
-    print("{} + {} = {}" .format(a, b, n))
-    print("{} + {} = {}" .format(a, b, o))
+    print("{} + {} = {}" .format(a, b, calculator_1.add(a, b)))
+    print("{} + {} = {}" .format(a, b, calculator_1.sub(a, b)))
+    print("{} + {} = {}" .format(a, b, calculator_1.mul(a, b)))
+    print("{} + {} = {}" .format(a, b, calculator_1.div(a, b)))
