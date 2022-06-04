@@ -4,4 +4,5 @@ def print_list_integer(my_list=[]):
     p = all ([isinstance (item, int,) for item in my_list])
     if p == True:
         for i in range(n):
-            print("{}" .format(my_list[i]))
+            m = "{}"
+            print(m.format(my_list[i]))
