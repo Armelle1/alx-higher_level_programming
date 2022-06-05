@@ -2,8 +2,10 @@
 def no_c(my_string):
     n = len(my_string)
     p = list(my_string)
-    for i in range(n - 3):
-        if p[i] == "c" or p[i] == "C":
-            del p[i]
-            m = "".join(p)
+    i = 0
+    for x in p:
+        if x == "c" or x == "C":
+            p.pop(i)
+        i = i + 1
+    m = "".join(p)
     return (m)
