@@ -7,6 +7,6 @@ def new_in_list(my_list, idx, element):
         return m
     if idx > n - 1:
         return m
-    if idx > 0:
+    if idx >= 0:
         m[idx] = element
     return m
