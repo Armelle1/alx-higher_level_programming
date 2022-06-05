@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 def no_c(my_string):
-    n = len(my_string)
     p = list(my_string)
     i = 0
     for x in p:
