@@ -4,9 +4,9 @@ def new_in_list(my_list, idx, element):
     p = tuple(my_list)
     m = list(p)
     if idx < 0:
-        return my_list
+        return m
     if idx > n - 1:
-        return my_list
+        return m
     if idx > 0:
         m[idx] = element
     return m
