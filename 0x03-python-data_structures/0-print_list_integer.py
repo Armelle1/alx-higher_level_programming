@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 def print_list_integer(my_list=[]):
     n = len(my_list)
-    if (all([isinstance(item, int,) for item in my_list])) is True:
-        for i in range(n):
-            print("{}" .format(my_list[i]))
+    for i in range(n):
+        print("{}" .format(my_list[i]))
