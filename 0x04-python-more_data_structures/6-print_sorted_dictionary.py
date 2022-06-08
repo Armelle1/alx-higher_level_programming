@@ -2,4 +2,5 @@
 def print_sorted_dictionary(a_dictionary):
     # p = a_dictionary.keys
     for i in sorted(a_dictionary):
-        print(i + ":", a_dictionary[i])
+     q = print(i + ":", a_dictionary[i])
+    return q
