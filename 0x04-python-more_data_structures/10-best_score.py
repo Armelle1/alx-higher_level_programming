@@ -1,8 +1,9 @@
 #!/usr/bin/python3
 def best_score(a_dictionary):
-    i = - 1000
     if a_dictionary is None:
         return None
+    first_key = list(a_dictionary)[0]
+    i = a_dictionary[first_key] #init with the first value
     for p in a_dictionary:
         if a_dictionary[p] >= i:
             i = a_dictionary[p]
