@@ -10,4 +10,3 @@ class Square:
         ''' Constructs all the necessary attributes for the square object
         '''
         self.__size = size
-
