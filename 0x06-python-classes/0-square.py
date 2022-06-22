@@ -3,4 +3,3 @@ class Square:
     '''
     The class square defines a square
     '''
-    pass
