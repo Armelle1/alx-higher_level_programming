@@ -1,3 +1,8 @@
 #!/usr/bin/python3
+''' The module Square that defines a square'''
+
+
 class Square:
-    pass #The class Square defines a square
+    '''
+    The class Square defines a square
+    '''
