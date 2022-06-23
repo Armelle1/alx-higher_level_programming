@@ -68,8 +68,8 @@ class Square:
             print()
         else:
             for i in range(size):
-                if position[1] > 0:
-                    for k in range(position[1]):
+                if position[0] > 0:
+                    for k in range(position[0]):
                         print(" ", end="")
                 for j in range(size):
                     print("#", end="")
