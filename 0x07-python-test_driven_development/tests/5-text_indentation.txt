@@ -1,0 +1,32 @@
+The ''5-text_indentation'' module
+======================
+
+Using ''text_indentation''
+-------------------
+
+This is an text_indentation test file .
+
+	>>> txt = __import__('5-text_indentation').text_indentation
+	
+	>>> txt("I like Python")
+	I like Python
+
+	>>> txt("I like Python.")
+        I like Python.
+	<BLANKLINE>
+
+	>>> txt("Do you like Python?")
+        Do you like Python?
+	<BLANKLINE>
+
+	>>> txt("I like Python because:")
+        I like Python because:
+	<BLANKLINE>
+
+	>>> txt(10)
+	Traceback (most recent call last):
+	TypeError: text must be a string
+ 	
+	>>> txt(None)
+        Traceback (most recent call last):
+        TypeError: text must be a string
