@@ -51,6 +51,7 @@ class Rectangle:
         return c
 
     def __str__(self):
+        ''' this module define '''
         if(self.__width == 0 or self.__height == 0):
             return("")
         result = ""
