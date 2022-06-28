@@ -1,5 +1,8 @@
 #!/usr/bin/python
-'''The module adds 2 integers'''
+'''
+Operation module
+The module adds 2 integers
+'''
 
 
 def add_integer(a, b=98):

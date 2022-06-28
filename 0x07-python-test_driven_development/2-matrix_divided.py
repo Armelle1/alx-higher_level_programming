@@ -1,5 +1,8 @@
 #!/usr/bin/python
-'''The module Divide a matrix'''
+'''
+Matrix module
+The module Divide a matrix
+'''
 
 
 def matrix_divided(matrix, div):
