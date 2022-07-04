@@ -30,6 +30,7 @@ class Rectangle(BaseGeometry):
         return self.__width * self.__height
 
     def __str__(self):
+        ''' for the format'''
         return "[Rectangle] " + str(self.__width) + "/" + str(self.__height)
 
 
@@ -42,4 +43,5 @@ class Square(Rectangle):
         self.__size = size
 
     def __str__(self):
+        ''' for the format'''
         return "[Square] " + str(self.__size) + "/" + str(self.__size)
