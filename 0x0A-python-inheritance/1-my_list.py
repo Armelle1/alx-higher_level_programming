@@ -5,4 +5,5 @@
 class MyList(list):
     ''' this class inherits of my list'''
     def print_sorted(self):
-        print(sorted(self))
+        if not type(self) is None:
+            print(sorted(self))
