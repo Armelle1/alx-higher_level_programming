@@ -6,4 +6,4 @@ def load_from_json_file(filename):
     ''' this module '''
     with open(filename, "r", encoding="utf-8") as f:
         import json
-        json.load(f)
+        return json.load(f)
