@@ -110,5 +110,7 @@ class Rectangle(Base):
 
     def __str__(self):
         ''' update str  method '''
-        result = "[Rectangle] (" + str(self.id) + ") " + str(self.__x) + "/" + str(self.__y) + " - " + str(self.__width) + "/" + str(self.__height)
-        return result
+        a_str = "[Rectangle] (" + str(self.id) + ") "
+        b_str = str(self.__x) + "/" + str(self.__y) + " - "
+        c_str = str(self.__width) + "/" + str(self.__height)
+        return a_str + b_str + c_str
