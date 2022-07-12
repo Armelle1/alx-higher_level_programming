@@ -103,7 +103,11 @@ class Rectangle(Base):
 
     def display(self):
         ''' This public method prints the Rectangle '''
+        for yy in range(self.__y):
+            print()
         for i in range(self.__height):
+            for xx in range(self.__x):
+                print(" ", end="")
             for j in range(self.__width):
                 print("#", end="")
             print()
@@ -114,3 +118,17 @@ class Rectangle(Base):
         b_str = str(self.__x) + "/" + str(self.__y) + " - "
         c_str = str(self.__width) + "/" + str(self.__height)
         return a_str + b_str + c_str
+
+    def update(self, *args):
+        ''' method that updates the rectangle '''
+        size = len(args)
+        if size >= 1:
+            self.id = args[0]
+        if size >= 2:
+            self.width = args[1]
+        if size >= 3:
+            self.height = args[2]
+        if size >= 4:
+            self.x = args[3]
+        if size >= 5:
+            self.y = args[4]
