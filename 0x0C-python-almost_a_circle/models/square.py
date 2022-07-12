@@ -28,3 +28,14 @@ class Square (Rectangle):
             self.x = args[3]
         if size >= 5:
             self.y = args[4]
+
+    @property
+    def size(self):
+        ''' this method gets the size'''
+        return self.width
+
+    @size.setter
+    def size(self, value):
+        ''' this method set the value of size '''
+        self.width = value
+        self.height = value
