@@ -119,16 +119,28 @@ class Rectangle(Base):
         c_str = str(self.__width) + "/" + str(self.__height)
         return a_str + b_str + c_str
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         ''' method that updates the rectangle '''
-        size = len(args)
-        if size >= 1:
-            self.id = args[0]
-        if size >= 2:
-            self.width = args[1]
-        if size >= 3:
-            self.height = args[2]
-        if size >= 4:
-            self.x = args[3]
-        if size >= 5:
-            self.y = args[4]
+        if not (args is None or len(args) == 0):
+            size = len(args)
+            if size >= 1:
+                self.id = args[0]
+            if size >= 2:
+                self.width = args[1]
+            if size >= 3:
+                self.height = args[2]
+            if size >= 4:
+                self.x = args[3]
+            if size >= 5:
+                self.y = args[4]
+        elif kwargs is not None:
+            if 'id' in kwargs:
+                self.id = kwargs.get('id')
+            if 'width' in kwargs:
+               self.width = kwargs.get('width')
+            if 'height' in kwargs:
+                self.height = kwargs.get('height')
+            if 'x' in kwargs:
+                self.x = kwargs.get('x')
+            if 'y' in kwargs:
+                self.y = kwargs.get('y')

@@ -15,19 +15,27 @@ class Square (Rectangle):
         b_str = str(self.x) + "/" + str(self.y) + " - " + str(self.width)
         return a_str + b_str
 
-    def update(self, *args):
-        ''' method that updates the rectangle '''
-        size = len(args)
-        if size >= 1:
-            self.id = args[0]
-        if size >= 2:
-            self.width = args[1]
-        if size >= 3:
-            self.height = args[2]
-        if size >= 4:
-            self.x = args[3]
-        if size >= 5:
-            self.y = args[4]
+    def update(self, *args, **kwargs):
+        ''' method that updates the square '''
+        if not (args is None or len(args) == 0):
+            size = len(args)
+            if size >= 1:
+                self.id = args[0]
+            if size >= 2:
+                self.size = args[1]
+            if size >= 3:
+                self.x = args[2]
+            if size >= 4:
+                self.y = args[3]
+        elif kwargs is not None:
+            if 'id' in kwargs:
+                self.id = kwargs.get('id')
+            if 'size' in kwargs:
+                self.size = kwargs.get('size')
+            if 'x' in kwargs:
+                self.x = kwargs.get('x')
+            if 'y' in kwargs:
+                self.y = kwargs.get('y')
 
     @property
     def size(self):
