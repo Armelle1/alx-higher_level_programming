@@ -22,7 +22,7 @@ class Base:
         else:
             return json.dumps(list_dictionaries)
 
-    def save_to_file(cls, list_objs):
+    def save_to_file(list_objs):
         ''' method that writes the JSON string of list_objs to a file '''
         list_save = []
         if type(list_objs[0]) is models.rectangle.Rectangle:
