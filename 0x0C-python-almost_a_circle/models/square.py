@@ -37,6 +37,14 @@ class Square (Rectangle):
             if 'y' in kwargs:
                 self.y = kwargs.get('y')
 
+    def to_dictionary(self):
+        ''' method that returns the dictionary representation
+        of a Square '''
+        square_dict = {"id": self.id, "size": self.size}
+        square_dict["x"] = self.x
+        square_dict["y"] = self.y
+        return square_dict
+
     @property
     def size(self):
         ''' this method gets the size'''
